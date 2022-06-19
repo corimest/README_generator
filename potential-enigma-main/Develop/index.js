@@ -1,9 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer'); 
+const fs = require('fs');
+const generateMarkdown = require ('./utils/generateMarkdown.js')
 
-// TODO: Create an array of questions for user input
-const promptUser = () => {
-    return inquirer.prompt([
+// Array of questions for user input
+const questions = [
     {
         type: 'input', 
         name: 'username',
@@ -20,7 +21,7 @@ const promptUser = () => {
     {
         type: 'input', 
         name: 'gitLink', 
-        message: 'Please provde a link to your GitHub repository.', 
+        message: 'Please provide a link to your GitHub repository.', 
         validate: gitLinkInput => {
             if (gitLinkInput) {
               return true;
@@ -84,10 +85,10 @@ const promptUser = () => {
     }, 
     {
         type: 'input', 
-        name: 'instructions', 
+        name: 'install', 
         message: 'Please provide installation instructions for your project.', 
-        validate: instructionsInput => {
-            if (instructionsInput) {
+        validate: installInput => {
+            if (installInput) {
               return true;
             } else {
               console.log('Please enter your name!');
@@ -134,14 +135,28 @@ const promptUser = () => {
             }
           }
     }
-])}
+]
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+            return console.log(err); 
+        }
+    
+    console.log('Success! You can now preview your README file!'); 
+    
+    });
+};
 
-// // TODO: Create a function to initialize app
-// function init() {}
+// TODO: Create a function to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then(function (userInput) {
+        console.log(userInput)
+        writeToFile('README.md', generateMarkdown(userInput)); 
+    });
+};
 
-// // Function call to initialize app
-// init(); 
-promptUser()
+// Function call to initialize app
+init(); 
