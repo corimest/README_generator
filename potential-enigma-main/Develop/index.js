@@ -79,7 +79,7 @@ const questions = [
             if (descriptInput) {
               return true;
             } else {
-              console.log('Please enter your name!');
+              console.log('Please enter a description!');
               return false;
             }
           }
@@ -92,7 +92,7 @@ const questions = [
             if (installInput) {
               return true;
             } else {
-              console.log('Please enter your name!');
+              console.log('Please enter a value!');
               return false;
             }
           }
@@ -105,7 +105,7 @@ const questions = [
             if (usageInput) {
               return true;
             } else {
-              console.log('Please enter your name!');
+              console.log('Please enter a value!');
               return false;
             }
           }
@@ -118,7 +118,7 @@ const questions = [
             if (contribInput) {
               return true;
             } else {
-              console.log('Please enter your name!');
+              console.log('Please enter a value!');
               return false;
             }
           }
@@ -131,7 +131,7 @@ const questions = [
             if (testInput) {
               return true;
             } else {
-              console.log('Please enter your name!');
+              console.log('Please enter a value!');
               return false;
             }
           }
