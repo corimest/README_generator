@@ -1,42 +1,34 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+// Generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ## License: 
+  ![license](https://img.shields.io/badge/license-${data.license}-red.svg?style=for-the-badge&logo=appveyor)
 
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
+  - [License](#license)
   - [Usage](#usage)
-  - [Contribution](#contribution)
-  - [Testing](#testing)
-  - [Contact Information](#contact-information)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Description: 
   ${data.descript}
   ## Installation:
   ${data.install}
+  ## License: 
+  This project is covered under ${data.license}.
+  For more information on licenses, please refer to https://choosealicense.com/licenses/.
   ## Usage: 
   ${data.usage}
-  ## Contribution: 
+  ## Contributing: 
   ${data.contrib}
   ## Testing
   ${data.test}
-  ## Contact Information
-  - GitHub: [${data.username}, ${data.gitLink}]
-  - Email: [${data.email}]
-  - Reach Out! [${data.reachOut}]
+  ## Questions
+  - GitHub: [${data.username}](https://github.com/${data.username})
+  - Email: [${data.email}](mailto:user@example.com)
+  - Reach Out: ${data.reachOut}
 
 `;
 }
