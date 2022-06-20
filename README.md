@@ -19,6 +19,8 @@
   For more information on licenses, please refer to https://choosealicense.com/licenses/.
   ## Usage: 
   Once Node and Inquirer are installed, you will be able to follow the prompts which will direct you to provide answers to certain questions. These answers will be added to your new README file. 
+  <img width="568" alt="Screen Shot 2022-06-19 at 9 00 54 PM" src="https://user-images.githubusercontent.com/88792082/174512586-5aba3203-d07a-455a-85b0-f1f5970a2be1.png">
+  <img width="494" alt="Screen Shot 2022-06-19 at 9 01 54 PM" src="https://user-images.githubusercontent.com/88792082/174512623-a73f0b3c-b3e4-4f89-a193-b857a8c8bbeb.png">
   ## Contributing: 
   Feel free to contribute if you like. 
   ## Testing
