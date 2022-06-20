@@ -20,19 +20,6 @@ const questions = [
     }, 
     {
         type: 'input', 
-        name: 'gitLink', 
-        message: 'Please provide a link to your GitHub repository.', 
-        validate: gitLinkInput => {
-            if (gitLinkInput) {
-              return true;
-            } else {
-              console.log('Please enter a link!');
-              return false;
-            }
-          }
-    },
-    {
-        type: 'input', 
         name: 'email', 
         message: 'Please provide your email.', 
         validate: emailInput => {
@@ -47,7 +34,7 @@ const questions = [
     {
         type: 'input', 
         name: 'reachOut', 
-        message: 'How would you like for people to reach out to you if they have addiitonal questions?', 
+        message: 'How would you like for people to reach out to you if they have additional questions?', 
         validate: reachOutInput => {
             if (reachOutInput) {
               return true;
@@ -56,6 +43,20 @@ const questions = [
               return false;
             }
           }
+    },
+    {
+      type: 'checkbox', 
+      name: 'license', 
+      message: 'Please choose the license that suits your project.', 
+      choices: ['GNU', 'Apache', 'MIT', 'Unlicense', 'MPL 2.0', 'Boost'], 
+      validate: licenseInput => {
+        if(licenseInput) {
+          return true; 
+        } else {
+          console.log('Please choose a license for your project.');
+          return false;
+        }
+      }
     },
     {
         type: 'input', 
