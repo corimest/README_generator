@@ -1,5 +1,5 @@
-# sjdhf
-  ![license](https://img.shields.io/badge/license-Apache-red.svg?style=for-the-badge&logo=appveyor)
+# README_generator
+  ![license](https://img.shields.io/badge/license-MIT-red.svg?style=for-the-badge&logo=appveyor)
 
   ## Table of Contents
   - [Description](#description)
@@ -11,20 +11,20 @@
   - [Questions](#questions)
 
   ## Description: 
-  jsdhf
+  it generates a README.md file
   ## Installation:
-  jsdhf
+  node and inquirer to fill out prompts
   ## License: 
-  This project is covered under Apache
-  For more information on licenses, please refer to https://choosealicense.com/licenses/
+  This project is covered under MIT.
+  For more information on licenses, please refer to https://choosealicense.com/licenses/.
   ## Usage: 
-  jshdf
-  ## Contribution: 
-  shdjf
+  use it
+  ## Contributing: 
+  can contribute
   ## Testing
-  jsdf
+  nome
   ## Questions
-  - GitHub: [jsdhf](https://github.com/jsdhf)
-  - Email: [sjdhf](mailto:user@example.com)
-  - Reach Out: jshdf
+  - GitHub: [corimest](https://github.com/corimest)
+  - Email: [corimest@gmail.com](mailto:user@example.com)
+  - Reach Out: email me
 
